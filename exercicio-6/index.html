@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="toggle-button" onclick="document.body.classList.toggle('dark-mode')">
+            Alternar Modo Escuro
+        </button>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel malesuada tortor. Aliquam erat volutpat.
+        </p>
+        <img src="./sea.jpg" alt="Imagem de exemplo">
+    </div>
+    </head>
+</body>
+</html>
