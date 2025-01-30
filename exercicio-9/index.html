@@ -1,0 +1,60 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            margin-top: 20%;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Div com border-radius</h1>
+
+        <div class="heart"></div>
+    </main>
+</body>
+
+</html>
